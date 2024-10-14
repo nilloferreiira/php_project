@@ -1,0 +1,188 @@
+/* Reset de margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* Container principal - Layout centralizado */
+.container {
+    border-radius: 12px;
+    padding: 40px 60px;
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mensagem de boas-vindas */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+}
+
+/* Nome do usuário em destaque */
+.user-name {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Botão de logout */
+.logout-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #ff3333;
+}
+
+/* Adiciona responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 40px;
+    }
+
+    .welcome-message {
+        font-size: 1.4em;
+    }
+
+    .logout-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+/* 
+
+    USER POSTS CSS 
+
+*/
+
+/* Reset de margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Container principal para os posts */
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada post */
+.post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho do post (autor e data de criação) */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Título do post */
+.post-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Texto do post */
+.post-text {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Rodapé do post (data da última atualização) */
+.post-footer {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+    .posts-container {
+        padding: 0 15px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post-title {
+        font-size: 1.5em;
+    }
+
+    .post-text {
+        font-size: 1em;
+    }
+}
+
+a.create-post {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 114px;
+    height: 40px;
+}
+
+a.create-post:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+a.create-post:active {
+    background-color: #388e3c;
+}
